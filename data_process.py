@@ -3,6 +3,7 @@
 Created on Thu Jun  4 21:43:12 2020
 
 @author: mrbaloglu
+Created in a computer with Windows 10 OS.
 """
 
 import numpy as np
@@ -12,13 +13,13 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import os
 
-num_ptx = 64
-root_path = "D:\\Belgeler\\MATH 465 Mathematical Foundations of Data Science\\Proje\\HAM10000_images_part_1"
-output_path = "D:\\Belgeler\\MATH 465 Mathematical Foundations of Data Science\\Proje\\cleaned_data\\" + str(num_ptx) + "ptx\\"
+num_ptx = 64 #process the images as 64*64*3 matrices - recommended resolutions are 32, 64, 128, ... depending on the computation power
+root_path1 = "---write your path to the image files here---\\HAM10000_images_part_1"
+output_path = "---write the path where you want to store the processed images here---" + str(num_ptx) + "ptx\\"
 
 import glob
 #take all file names in the directory intoa list for each class
-image_file_list = glob.glob(root_path + "\\*")
+image_file_list = glob.glob(root_path1 + "\\*")
 
 images_np = []
 image_names= []
@@ -37,8 +38,8 @@ for img_file in image_file_list:
     except:
         IOError
 
-root_path = "D:\\Belgeler\\MATH 465 Mathematical Foundations of Data Science\\Proje\\HAM10000_images_part_2"
-image_file_list2 = glob.glob(root_path + "\\*")
+root_path2 = "---write your path to the image files here---\\HAM10000_images_part_2"
+image_file_list2 = glob.glob(root_path2 + "\\*")
 #putting pictures in the HAM10000_images_part_2 into pd.dataframe
 for img_file in image_file_list2:
     try:
