@@ -5,4 +5,7 @@ For the preprocessing of the images into the numpy arrays see the descriptions i
 
 Overview of these models can be seen in the following figures uploaded in the repository. 
 
+# References
+1. Source of the dataset: https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
+
 
